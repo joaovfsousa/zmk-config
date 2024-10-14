@@ -2,7 +2,6 @@ parse_config:
   zmk_preamble: "#include <zmk-helpers/key-labels/34.h>"
   zmk_additional_includes:
     - "modules/helpers/include"
-
 draw_config:
-  footer_text: "urob/zmk-config"
+  footer_text: "joaovfsousa/zmk-config"
   dark_mode: auto
