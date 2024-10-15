@@ -1,7 +1,7 @@
 #include "zmk-helpers/key-labels/adv360_custom.h"
 
 /* map Zen's extra keys */
-#define X_LH  &kp LGUI      // thumb row, left
+#define X_LH  &none      // thumb row, left
 #define X_RH  &smart_mouse  // thumb row, right
 
 /* activate bluetooth */
