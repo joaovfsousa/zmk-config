@@ -1,8 +1,22 @@
 #include "zmk-helpers/key-labels/adv360_custom.h"
 
 /* map Zen's extra keys */
-#define X_LH  &none      // thumb row, left
-#define X_RH  &smart_mouse  // thumb row, right
+// #define X_LH  &none      // thumb row, left
+// #define X_RH  &smart_mouse  // thumb row, right
+
+#define X_LT    &none &none &none &none &none &none &none     &none &none &none &none &none &none &none \
+                &none
+#define X_MT    &none &none
+#define X_RT    &none
+#define X_LM    &none
+#define X_MM    &none &none &none &none &none &none
+#define X_RM    &none
+#define X_LB    &none
+#define X_MB    &none &none
+#define X_RB    &none
+#define X_LH    &none &none &none &none &none
+#define X_MH    &none &none
+#define X_RH    &none &none &none &none &none
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS
