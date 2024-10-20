@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <behaviors/num_word.dtsi> // requires auto-layer module
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -18,8 +17,6 @@
 #endif
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/unicode-chars/greek.dtsi"
-#include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define DEF 0
 #define NUM 1
@@ -176,9 +173,9 @@ ZMK_LAYER(sym,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────────┼────────────────┼────────────────────┼──────────────────────┼─────────────────╮ ╭──────╮ ╭───────────┼───────────────────┼─────────────────┼──────────────────┼───────────────────────╮ ╭──────╮
-    X_LT     XXX               &kp LEFT         &kp UP               &kp DOWN               &kp RIGHT           X_MT     XXX         XXX                 XXX               XXX                XXX                       X_RT
+    X_LT     XXX               &kp LEFT         &kp UP               &kp DOWN               &kp RIGHT           X_MT     XXX         XXX                 XXX               XXX                &hmr LCTRL LG(LS(N2))     X_RT
 //├──────┤ ├─────────────────┼────────────────┼────────────────────┼──────────────────────┼─────────────────┤ ├──────┤ ├───────────┼───────────────────┼─────────────────┼──────────────────┼───────────────────────┤ ├──────┤
-    X_LM     &hml LCTRL C_PP   &hml LALT C_PREV &hmlg LGUI C_VOL_UP  &hml LSHFT C_VOL_DN    &hml HYPER C_NEXT   X_MM     &kp LEFT    &kp DOWN            &kp UP            &kp RIGHT          &hmr LCTRL LG(LS(N2))     X_RM
+    X_LM     &hml LCTRL C_PP   &hml LALT C_PREV &hmlg LGUI C_VOL_UP  &hml LSHFT C_VOL_DN    &hml HYPER C_NEXT   X_MM     &kp LEFT    &kp DOWN            &kp UP            &kp RIGHT          XXX                       X_RM
 //├──────┤ ├─────────────────┼────────────────┼────────────────────┼──────────────────────┼─────────────────┤ ├──────┤ ├───────────┼───────────────────┼─────────────────┼──────────────────┼───────────────────────┤ ├──────┤
     X_LB     XXX               XXX              XXX                  XXX                    XXX                 X_MB     XXX         XXX                 XXX               XXX                &kp LG(LS(N5))            X_RB
 //├──────┤ ╰─────────────────┼────────────────┴────────────────────┼──────────────────────┼─────────────────┤ ├──────┤ ├───────────┼───────────────────┼─────────────────┴──────────────────┴───────────────────────╯ ├──────┤
