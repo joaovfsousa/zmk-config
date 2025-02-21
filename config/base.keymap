@@ -86,14 +86,6 @@ MAKE_HRM(hmlg, &kp, &kp, KEYS_L KEYS_R THUMBS)  // left-hand HRM for cmd/ctrl to
 
 &mt { MT_CORE };
 
-
-// smart-mouse, requires PR #1366
-ZMK_TRI_STATE(smart_mouse,
-    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
-    ignored-key-positions = <LB4 LB3 LB2 LB1 LB0 RT0 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RB1 RB2 RB3 LH1 LH0 RH0 RH1>;
-    ignored-layers = <MOUSE>;
-)
-
 /* Custom behaviors */
 
 // reuse basic mod-morph scheme
