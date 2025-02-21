@@ -124,7 +124,7 @@ ZMK_HOLD_TAP(clt,
 
 /* Keymap */
 
-ZMK_CONDITIONAL_LAYER(sys, NUM SYM, SYS)  // NUM + SYM --> SYS
+// ZMK_CONDITIONAL_LAYER(sys, NUM SYM, SYS)  // NUM + SYM --> SYS
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
